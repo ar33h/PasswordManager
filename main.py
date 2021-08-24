@@ -72,6 +72,7 @@ def create_pass():
                     cur.execute(query)
                     conn.commit()
                     messagebox.showinfo('Success', 'Password successfully created. You can Login now!')
+                    main.destroy()
                 except:
                     messagebox.showwarning('Error', 'Please try again!')
                 
